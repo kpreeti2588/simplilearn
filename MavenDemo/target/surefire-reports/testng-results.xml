@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="153841" started-at="2020-09-29T22:29:43Z" finished-at="2020-09-29T22:32:17Z">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="153841" started-at="2020-09-29T22:29:43Z" finished-at="2020-09-29T22:32:17Z">
+      <class name="com.maven.testcases.CalorieCalcHTTestCaseClass">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCaseClass@49e202ad]" name="init" is-config="true" duration-ms="32287" started-at="2020-09-29T22:30:42Z" finished-at="2020-09-29T22:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCaseClass@49e202ad]" name="CalorieCalcTest" duration-ms="3489" started-at="2020-09-29T22:31:14Z" data-provider="getCalorieData" finished-at="2020-09-29T22:31:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=35}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCaseClass@49e202ad]" name="CalorieCalcTest" duration-ms="2580" started-at="2020-09-29T22:31:18Z" data-provider="getCalorieData" finished-at="2020-09-29T22:31:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=55}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCaseClass@49e202ad]" name="CalorieCalcTest" duration-ms="2687" started-at="2020-09-29T22:31:20Z" data-provider="getCalorieData" finished-at="2020-09-29T22:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=65}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCaseClass@49e202ad]" name="closeBrowser" is-config="true" duration-ms="798" started-at="2020-09-29T22:31:23Z" finished-at="2020-09-29T22:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.maven.testcases.CalorieCalcHTTestCaseClass -->
+      <class name="com.maven.testcases.ChangeDropdownValues">
+        <test-method status="PASS" signature="changeDDvalues()[pri:0, instance:com.maven.testcases.ChangeDropdownValues@1c72da34]" name="changeDDvalues" duration-ms="10975" started-at="2020-09-29T22:31:24Z" finished-at="2020-09-29T22:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeDDvalues -->
+      </class> <!-- com.maven.testcases.ChangeDropdownValues -->
+      <class name="com.maven.testcases.CompositeMouseOp">
+        <test-method status="PASS" signature="MouseOps()[pri:0, instance:com.maven.testcases.CompositeMouseOp@6b0c2d26]" name="MouseOps" duration-ms="42135" started-at="2020-09-29T22:31:35Z" finished-at="2020-09-29T22:32:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseOps -->
+      </class> <!-- com.maven.testcases.CompositeMouseOp -->
+      <class name="com.maven.testcases.CalorieCalcHTTestCase">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="init" is-config="true" duration-ms="33015" started-at="2020-09-29T22:29:43Z" finished-at="2020-09-29T22:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="CalorieCalcTest" duration-ms="3480" started-at="2020-09-29T22:30:16Z" data-provider="getCalorieData" finished-at="2020-09-29T22:30:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=35}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="closeBrowser" is-config="true" duration-ms="2914" started-at="2020-09-29T22:30:19Z" finished-at="2020-09-29T22:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="init" is-config="true" duration-ms="4145" started-at="2020-09-29T22:30:22Z" finished-at="2020-09-29T22:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="CalorieCalcTest" duration-ms="3114" started-at="2020-09-29T22:30:27Z" data-provider="getCalorieData" finished-at="2020-09-29T22:30:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=55}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="closeBrowser" is-config="true" duration-ms="709" started-at="2020-09-29T22:30:30Z" finished-at="2020-09-29T22:30:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="init" is-config="true" duration-ms="5551" started-at="2020-09-29T22:30:30Z" finished-at="2020-09-29T22:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.util.Hashtable)[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="CalorieCalcTest" duration-ms="2983" started-at="2020-09-29T22:30:36Z" data-provider="getCalorieData" finished-at="2020-09-29T22:30:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{sex=f, hage=65}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.maven.testcases.CalorieCalcHTTestCase@6166e06f]" name="closeBrowser" is-config="true" duration-ms="2943" started-at="2020-09-29T22:30:39Z" finished-at="2020-09-29T22:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.maven.testcases.CalorieCalcHTTestCase -->
+    </test> <!-- Regression1 -->
+  </suite> <!-- TestSuite -->
+</testng-results>

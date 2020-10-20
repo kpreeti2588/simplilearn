@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop = "http://www.springframework.org/schema/aop"
+    xmlns:context ="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/jdbc 
+        http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+         http://www.springframework.org/schema/aop 
+         http://www.springframework.org/schema/aop/spring-aop-3.0.xsd" >
+         
+         <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+			<property name="url" value="jdbc:mysql://localhost:3306/empdb?useUnicode=true&amp;characterEncoding=UTF-8" />
+			<property name="username" value="root" />
+			<property name="password" value="admin123" />
+         </bean>
+         <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+           <property name="dataSource" ref="dataSource"></property>
+		</bean>
+		
+<bean id="empDao" class="com.ymail.dao.EmployeeDao">
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+</bean>
+         
+<bean name="ymailAspect" class="com.ymail.aop.YmailAspect">
+</bean>         
+        
+<aop:config>
+<aop:aspect ref="ymailAspect">
+<aop:pointcut expression="execution(* com.ymail.dao.EmployeeDao.*(..))" id="logging"/>  
+<aop:before method="executeBefore" pointcut-ref="logging" />      
+</aop:aspect>
+</aop:config> 
+<tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager" />
+
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+ <property name="dataSource" ref="dataSource" />
+</bean>
+
+
+
+         </beans>

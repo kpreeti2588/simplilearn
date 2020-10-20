@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ymail">
+        <wb-resource deploy-path="/" source-path="/ymail" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="ymail"/>
+        <property name="java-output-path" value="/ymail/build/classes"/>
+    </wb-module>
+</project-modules>

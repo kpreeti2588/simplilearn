@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="ChromeTests(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="Win7"/>
+    <classes>
+      <class name="com.project.testcases.LoginTestCase">
+        <methods>
+          <include name="quit"/>
+          <include name="LoginwithInvalidCredential"/>
+          <include name="verifyLogoff"/>
+          <include name="chrome_extension"/>
+          <include name="initTest"/>
+          <include name="LoginwithValidCredentials"/>
+        </methods>
+      </class> <!-- com.project.testcases.LoginTestCase -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

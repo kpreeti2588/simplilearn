@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd" > <!--  default-init-method="init" default-destroy-method="destroy">-->
+        
+   
+   <bean id="employee" class="springapp.Employee"> <!--   init-method="init" destroy-method="destroy">-->
+   <property name="list">
+   <list>
+   <value>mobile</value>
+   <value>car</value>
+   <value>bike</value>
+   <value>plane</value>
+   <value>tab</value>
+   </list>
+   </property>
+   
+     <property name="numberList">
+   <list>
+   <value>1</value>
+   <value>2</value>
+   <value>3</value>
+   <value>4</value>
+   <value>5</value>
+   </list>
+   </property>
+   
+   <property name="set">
+   <set>
+   <value>mobile1</value>
+   <value>car1</value>
+   <value>bike1</value>
+   <value>plane1</value>
+   <value>tab1</value> 
+   </set>
+   </property>
+   
+   <property name="map">
+   <map>
+   <entry key="1" value="raju"></entry>
+   <entry key="2" value="raj"></entry>
+   <entry key="3" value="rajender"></entry>
+   <entry key="4" value="rajesh"></entry> 
+   <entry key="5" value="rajan"></entry> 
+   </map>
+   </property>
+   </bean>
+   
+        
+          <bean id="address" class="springapp.Address">
+        <property name ="aid" value="1001"></property>
+        <property name ="street" value="james street"></property>
+        <property name ="city" value="HYD"></property>
+        <property name ="country" value="INDIA"></property>
+        </bean>
+        
+        <bean id="empObj" class="springapp.EmployeeDetails"  scope="prototype" autowire="byName">
+        <property name ="id" value="1"></property>
+        <property name ="name" value="preeti"></property>
+        <property name ="phone" value="3224242"></property>
+       <!--  <property name ="address" ref="addressObject"></property> -->
+        </bean>
+        
+        <bean id="consObj1" class="springapp.EmployeeDetails"  scope="prototype">
+        <constructor-arg index="0" value="768"></constructor-arg>
+        <constructor-arg index="1" value="aziza"></constructor-arg>
+        <constructor-arg index="2" value="8876843434"></constructor-arg>       
+        </bean>
+        
+         <bean id="consObj" class="springapp.EmployeeDetails"  scope="prototype">
+        <constructor-arg index="0" value="769"></constructor-arg>
+        <constructor-arg index="1" value="aziz"></constructor-arg>
+        <constructor-arg index="2" value="976843434"></constructor-arg>
+         <constructor-arg index="3" value="addressObject"></constructor-arg>      
+        </bean>
+        
+        
+        
+        </beans>

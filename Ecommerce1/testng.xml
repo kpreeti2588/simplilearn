@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ChromeTests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="platform" value="Win7"/>
+    <classes>
+        <class name="com.project.testcases.LoginTestCase"/> 
+        <class name="com.project.testcases.AccountCreateTestCase"/>  
+        <class name="com.project.testcases.SearchItemTestCase"/> 
+        <class name="com.project.testcases.ManufacturerTestCase"/>  
+        <class name="com.project.testcases.ShareTestCase"/>       
+        <class name="com.project.testcases.OrderPlaceTestCase"/>   
+        <class name="com.project.testcases.ReviewTestCase"/>  
+    </classes>
+    </test> 
+</suite> <!-- Suite -->

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="99086" started-at="2020-09-26T15:50:33 IST" finished-at="2020-09-26T15:52:12 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="99086" started-at="2020-09-26T15:50:33 IST" finished-at="2020-09-26T15:52:12 IST">
+      <class name="com.project.testcases.CalorieCalcPageTestCase">
+        <test-method status="PASS" signature="CalorieCalcPageTest(java.util.Hashtable)[pri:0, instance:com.project.testcases.CalorieCalcPageTestCase@3a883ce7]" name="CalorieCalcPageTest" duration-ms="36007" started-at="2020-09-26T15:50:34 IST" data-provider="getCalorieData" finished-at="2020-09-26T15:51:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{height=170, age=45, sex=f, weight=92}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcPageTest -->
+        <test-method status="PASS" signature="CalorieCalcPageTest(java.util.Hashtable)[pri:0, instance:com.project.testcases.CalorieCalcPageTestCase@3a883ce7]" name="CalorieCalcPageTest" duration-ms="14960" started-at="2020-09-26T15:51:10 IST" data-provider="getCalorieData" finished-at="2020-09-26T15:51:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{height=150, age=56, sex=m, weight=88}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcPageTest -->
+        <test-method status="PASS" signature="CalorieCalcPageTest(java.util.Hashtable)[pri:0, instance:com.project.testcases.CalorieCalcPageTestCase@3a883ce7]" name="CalorieCalcPageTest" duration-ms="6810" started-at="2020-09-26T15:51:25 IST" data-provider="getCalorieData" finished-at="2020-09-26T15:51:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{height=160, age=65, sex=f, weight=70}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcPageTest -->
+        <test-method status="PASS" signature="CalorieCalcPageTest(java.util.Hashtable)[pri:0, instance:com.project.testcases.CalorieCalcPageTestCase@3a883ce7]" name="CalorieCalcPageTest" duration-ms="6320" started-at="2020-09-26T15:51:32 IST" data-provider="getCalorieData" finished-at="2020-09-26T15:51:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{height=180, age=90, sex=m, weight=60}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcPageTest -->
+        <test-method status="PASS" signature="CalorieCalcPageTest(java.util.Hashtable)[pri:0, instance:com.project.testcases.CalorieCalcPageTestCase@3a883ce7]" name="CalorieCalcPageTest" duration-ms="34253" started-at="2020-09-26T15:51:38 IST" data-provider="getCalorieData" finished-at="2020-09-26T15:52:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{height=140, age=20, sex=f, weight=55}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcPageTest -->
+      </class> <!-- com.project.testcases.CalorieCalcPageTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

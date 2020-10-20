@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from EmployeeDaoService WSDL service -->
+
+  <service name="EmployeeDao" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://dao.ymail.com"/>
+      <parameter name="wsdlServiceElement" value="EmployeeDaoService"/>
+      <parameter name="schemaQualified" value="http://core.jdbc.springframework.org,http://support.jdbc.springframework.org,http://dao.ymail.com,http://model.ymail.com"/>
+      <parameter name="wsdlServicePort" value="EmployeeDao"/>
+      <parameter name="className" value="com.ymail.dao.EmployeeDao"/>
+      <parameter name="wsdlPortType" value="EmployeeDao"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://dao.ymail.com" xmlns:retNS="http://dao.ymail.com" xmlns:rtns="http://dao.ymail.com" xmlns:tns="http://dao.ymail.com" name="getDetails" qname="operNS:getDetails" returnQName="retNS:getDetailsReturn" returnType="rtns:ArrayOf_xsd_anyType" returnItemQName="tns:item" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://dao.ymail.com" xmlns:retNS="http://dao.ymail.com" xmlns:rtns="http://core.jdbc.springframework.org" name="getJdbcTemplate" qname="operNS:getJdbcTemplate" returnQName="retNS:getJdbcTemplateReturn" returnType="rtns:JdbcTemplate" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://dao.ymail.com" name="setJdbcTemplate" qname="operNS:setJdbcTemplate" soapAction="">
+        <parameter xmlns:pns="http://dao.ymail.com" xmlns:tns="http://core.jdbc.springframework.org" qname="pns:jdbcTemplate" type="tns:JdbcTemplate"/>
+      </operation>
+      <operation xmlns:operNS="http://dao.ymail.com" name="saveEmployee" qname="operNS:saveEmployee" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://dao.ymail.com" name="updateEmployee" qname="operNS:updateEmployee" soapAction="">
+        <parameter xmlns:pns="http://dao.ymail.com" xmlns:tns="http://model.ymail.com" qname="pns:details" type="tns:EmployeeDetails"/>
+      </operation>
+      <operation xmlns:operNS="http://dao.ymail.com" name="deleteEmployee" qname="operNS:deleteEmployee" soapAction="">
+        <parameter xmlns:pns="http://dao.ymail.com" xmlns:tns="http://model.ymail.com" qname="pns:details" type="tns:EmployeeDetails"/>
+      </operation>
+      <parameter name="allowedMethods" value="saveEmployee updateEmployee getDetails getJdbcTemplate deleteEmployee setJdbcTemplate"/>
+
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;setJdbcTemplate" type="java:com.ymail.dao.SetJdbcTemplate" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;getJdbcTemplateResponse" type="java:com.ymail.dao.GetJdbcTemplateResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;setJdbcTemplateResponse" type="java:com.ymail.dao.SetJdbcTemplateResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;getDetails" type="java:com.ymail.dao.GetDetails" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;saveEmployeeResponse" type="java:com.ymail.dao.SaveEmployeeResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;saveEmployee" type="java:com.ymail.dao.SaveEmployee" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;getDetailsResponse" type="java:com.ymail.dao.GetDetailsResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <arrayMapping xmlns:ns="http://dao.ymail.com" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema" qname="ns:ArrayOf_xsd_anyType" type="java:java.lang.Object[]" innerType="cmp-ns:anyType" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;deleteEmployeeResponse" type="java:com.ymail.dao.DeleteEmployeeResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;updateEmployee" type="java:com.ymail.dao.UpdateEmployee" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://support.jdbc.springframework.org" qname="ns:JdbcAccessor" type="java:org.springframework.jdbc.support.JdbcAccessor" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;deleteEmployee" type="java:com.ymail.dao.DeleteEmployee" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;updateEmployeeResponse" type="java:com.ymail.dao.UpdateEmployeeResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://dao.ymail.com" qname="ns:&gt;getJdbcTemplate" type="java:com.ymail.dao.GetJdbcTemplate" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://model.ymail.com" qname="ns:EmployeeDetails" type="java:com.ymail.model.EmployeeDetails" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://core.jdbc.springframework.org" qname="ns:JdbcTemplate" type="java:org.springframework.jdbc.core.JdbcTemplate" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

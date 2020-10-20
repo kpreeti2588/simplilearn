@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="148003" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:45:24 IST">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="148003" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:45:24 IST">
+      <class name="testng.CalorieCalcTestCase">
+        <test-method status="PASS" signature="init()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="init" is-config="true" duration-ms="8534" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:43:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.lang.String, java.lang.String)[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="CalorieCalcTest" duration-ms="10822" started-at="2020-10-02T17:43:04 IST" data-provider="getCalorieData" finished-at="2020-10-02T17:43:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="closeBrowser" is-config="true" duration-ms="702" started-at="2020-10-02T17:43:15 IST" finished-at="2020-10-02T17:43:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="init()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="init" is-config="true" duration-ms="6535" started-at="2020-10-02T17:43:16 IST" finished-at="2020-10-02T17:43:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.lang.String, java.lang.String)[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="CalorieCalcTest" duration-ms="28474" started-at="2020-10-02T17:43:22 IST" data-provider="getCalorieData" finished-at="2020-10-02T17:43:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="closeBrowser" is-config="true" duration-ms="2636" started-at="2020-10-02T17:43:51 IST" finished-at="2020-10-02T17:43:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="init()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="init" is-config="true" duration-ms="24308" started-at="2020-10-02T17:43:53 IST" finished-at="2020-10-02T17:44:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CalorieCalcTest(java.lang.String, java.lang.String)[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="CalorieCalcTest" duration-ms="29466" started-at="2020-10-02T17:44:18 IST" data-provider="getCalorieData" finished-at="2020-10-02T17:44:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[65]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalorieCalcTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testng.CalorieCalcTestCase@29774679]" name="closeBrowser" is-config="true" duration-ms="743" started-at="2020-10-02T17:44:47 IST" finished-at="2020-10-02T17:44:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testng.CalorieCalcTestCase -->
+      <class name="testng.TestNGExample2">
+        <test-method status="PASS" signature="validateLogin()[pri:1, instance:testng.TestNGExample2@61832929]" name="validateLogin" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method status="PASS" signature="AccountEnquiry()[pri:2, instance:testng.TestNGExample2@61832929]" name="AccountEnquiry" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountEnquiry -->
+        <test-method status="PASS" signature="Reporting()[pri:3, instance:testng.TestNGExample2@61832929]" name="Reporting" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reporting -->
+        <test-method status="PASS" signature="LogOff()[pri:4, instance:testng.TestNGExample2@61832929]" name="LogOff" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOff -->
+      </class> <!-- testng.TestNGExample2 -->
+      <class name="testng.ChangeDropdownValues">
+        <test-method status="PASS" signature="changeDDvalues()[pri:0, instance:testng.ChangeDropdownValues@3ffc5af1]" name="changeDDvalues" duration-ms="35724" started-at="2020-10-02T17:44:48 IST" finished-at="2020-10-02T17:45:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeDDvalues -->
+      </class> <!-- testng.ChangeDropdownValues -->
+      <class name="testng.TestNGExample">
+        <test-method status="PASS" signature="validateLogin()[pri:1, instance:testng.TestNGExample@5b275dab]" name="validateLogin" duration-ms="5" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method status="PASS" signature="AccountEnquiry()[pri:2, instance:testng.TestNGExample@5b275dab]" name="AccountEnquiry" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountEnquiry -->
+        <test-method status="PASS" signature="Reporting()[pri:3, instance:testng.TestNGExample@5b275dab]" name="Reporting" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reporting -->
+        <test-method status="PASS" signature="LogOff()[pri:4, instance:testng.TestNGExample@5b275dab]" name="LogOff" duration-ms="0" started-at="2020-10-02T17:42:56 IST" finished-at="2020-10-02T17:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOff -->
+      </class> <!-- testng.TestNGExample -->
+    </test> <!-- Regression1 -->
+  </suite> <!-- TestSuite -->
+</testng-results>

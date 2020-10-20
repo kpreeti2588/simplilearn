@@ -1,0 +1,5 @@
+com\maven\testcases\ChangeDropdownValues.class
+com\maven\MavenDemo\AppTest.class
+com\maven\testcases\CalorieCalcHTTestCaseClass.class
+com\maven\testcases\CalorieCalcHTTestCase.class
+com\maven\testcases\CompositeMouseOp.class
